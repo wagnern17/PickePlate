@@ -1,0 +1,161 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:background="#FF000000"
+    android:id="@+id/background">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollBarTemplate">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/template"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:id="@+id/top">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/topLeft">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Pick-e-Plate GO"
+                        android:id="@+id/title"
+                        android:textSize="70dp"
+                        android:textColor="#FFFFFFFF" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#ffe4f1d5">
+
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Home"
+                            android:id="@+id/button"
+                            android:layout_weight="1"
+                            android:background="#ff52c232"
+                            android:layout_gravity="bottom" />
+
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Order Now"
+                            android:id="@+id/button2"
+                            android:layout_weight="1"
+                            android:background="#ff52c232"
+                            android:layout_gravity="bottom" />
+
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="About Us"
+                            android:id="@+id/button3"
+                            android:layout_weight="1"
+                            android:background="#ff52c232"
+                            android:layout_gravity="bottom" />
+
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Sign Up!"
+                            android:id="@+id/button4"
+                            android:layout_weight="1"
+                            android:background="#ff52c232"
+                            android:layout_gravity="bottom" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="201dp"
+                    android:layout_height="180dp"
+                    android:id="@+id/imageView"
+                    android:layout_gravity="right"
+                    android:src="@mipmap/PickePlate"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#FFFFFFFF"
+                android:weightSum="1"
+                android:focusableInTouchMode="false"
+                android:id="@+id/midBot">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ff000000"
+                    android:id="@+id/mid">
+
+                    <ImageView
+                        android:layout_width="530dp"
+                        android:layout_height="531dp"
+                        android:id="@+id/imageView2"
+                        android:src="@mipmap/family4"
+                        android:background="#ff000000" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="512dp"
+                        android:text="&quot;At Pick-e-Plate, we put love into everything we do.  Our top priority is the people we serve, and helping them live the lives in such a way that they are proud to be a member of the Pick-e-Plate family!&quot;                               -Founder and CEO, AJ Allen"
+                        android:id="@+id/textView"
+                        android:textSize="25dp"
+                        android:background="#ff000000"
+                        android:textColor="#FFFFFFFF" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pick-e-Plate GO is an android application platform, designed for the Pick-e-Plate family to have the most possible access to our services.  GO is intended for ease of use both for veterans to our crusade, as well as first time attendees!  Please visit the “About Us” tab to read more about our mission, motto and founder, and to get started with your own Pick-e-Plate adventure, check out the “Order Now” tab!  Also, use the promo code “innovation” for a free first time delivery cost!"
+                    android:id="@+id/textView2"
+                    android:textColor="#FFFFFFFF"
+                    android:layout_weight="1"
+                    android:background="#FF000000"
+                    android:textSize="25dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="100">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/scrollView"
+                android:background="#ffffffff"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
